@@ -19,4 +19,14 @@ public class StringBuilderTest {
         //Subsequent changes to this sequence do not affect the contents of the String.
         System.out.println(str);
     }
+
+    public void sbEqualsStrTest() {
+        StringBuilder sb = new StringBuilder("abc");
+        String str = "abc";
+
+        //should both returns false.
+        //str and sb different objects. 
+        System.out.println(str.equals(sb));
+        System.out.println(sb.equals(str));
+    }
 }
