@@ -1,6 +1,6 @@
 public class StringBuilderTest {
 
-    public void toStringTest() {
+    public static void toStringTest() {
         StringBuilder sb = new StringBuilder("abc");
         String s1 = sb.toString();
         String s2 = sb.toString();
@@ -10,7 +10,7 @@ public class StringBuilderTest {
         System.out.println(s1 == s2);
     }
 
-    public void toStringTest2() {
+    public static void toStringTest2() {
         StringBuilder sb = new StringBuilder("abc");
         String str = sb.toString();
         sb.append("defg");
@@ -20,12 +20,12 @@ public class StringBuilderTest {
         System.out.println(str);
     }
 
-    public void sbEqualsStrTest() {
+    public static void sbEqualsStrTest() {
         StringBuilder sb = new StringBuilder("abc");
         String str = "abc";
 
         //should both returns false.
-        //str and sb different objects. 
+        //str and sb different objects.
         System.out.println(str.equals(sb));
         System.out.println(sb.equals(str));
     }
