@@ -12,6 +12,6 @@ public class ArrayTest {
 
         //can print null
         //null + null -> nullPtrExp
-        System.out.println(arr[0] + arr[1]);
+        //System.out.println(arr[0] + arr[1]);
     }
 }
