@@ -1,6 +1,8 @@
 public class Main {
 
     public static void main(String[] args) {
-        ArrayTest.initialisationTest();
+        Student student = new Student();
+        System.out.println(student.name);
+        System.out.println(student.age);
     }
 }
