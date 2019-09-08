@@ -7,7 +7,7 @@ public class Person {
 
     public Person() {
         //Wrong way to chain constructors
-        //mainApp.Person("abc", 20);
+        //Person("abc", 20);
 
         //proper way to chain constructors
         this("abc", 20);
