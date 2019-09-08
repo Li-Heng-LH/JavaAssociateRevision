@@ -9,6 +9,7 @@ import orders.Order;
 
 public class Item {
 
+    protected int i2;
     Order order = new Order();
 
     //protected : class in sub-package cannot access protected in parent package
