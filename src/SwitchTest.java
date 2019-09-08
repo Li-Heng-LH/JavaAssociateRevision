@@ -64,4 +64,25 @@ public class SwitchTest {
         }
         //Expected : Default, 1, 3, 19, 99, 999
     }
+
+
+    public static void noCaseMet_defaultAtBottom() {
+        int i = 9;
+
+        switch (i) {
+            case 1:
+                System.out.println(1);
+            case 3:
+                System.out.println(3);
+            case 19:
+                System.out.println(19);
+            case 99:
+                System.out.println(99);
+            case 999:
+                System.out.println(999);
+            default:
+                System.out.println("Default");
+        }
+        //Expected : Default
+    }
 }

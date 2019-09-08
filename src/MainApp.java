@@ -7,6 +7,6 @@ import orders.items.*;
 public class MainApp {
 
     public static void main(String[] args) {
-        SwitchTest.noCaseMet_defaultOnTop();
+        SwitchTest.noCaseMet_defaultAtBottom();
     }
 }
