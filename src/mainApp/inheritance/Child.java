@@ -11,5 +11,8 @@ public class Child extends Parent {
         System.out.println(i1);
         System.out.println(this.i1);
         System.out.println(super.i1);
+
+        //cannot access default-access parent attribute from different package
+        //System.out.println(i2);//give error
     }
 }
