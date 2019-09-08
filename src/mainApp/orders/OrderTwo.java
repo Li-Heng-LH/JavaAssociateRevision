@@ -1,4 +1,4 @@
-package orders;
+package mainApp.orders;
 
 public class OrderTwo {
 

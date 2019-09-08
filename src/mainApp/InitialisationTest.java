@@ -1,3 +1,5 @@
+package mainApp;
+
 public class InitialisationTest {
 
     public static void DoubleInitialisationTest() {

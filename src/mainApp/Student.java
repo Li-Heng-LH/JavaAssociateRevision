@@ -1,3 +1,5 @@
+package mainApp;
+
 public class Student {
     String name;
     int age;

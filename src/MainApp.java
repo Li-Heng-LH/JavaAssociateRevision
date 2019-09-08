@@ -1,12 +1,15 @@
 //Cannot import sub-packages
-import orders.*;
+//import mainApp.orders.*;
 
 //Need a separate import for each subpackage
-import orders.items.*;
+//import mainApp.orders.items.*;
+
+import mainApp.inheritance.Child;
 
 public class MainApp {
 
     public static void main(String[] args) {
-        SwitchTest.noCaseMet_defaultAtBottom();
+        Child child = new Child();
+        child.print();
     }
 }

@@ -1,11 +1,11 @@
-package orders;
+package mainApp.orders;
 
 //invalid import stmt
 //import items.*;
 
 //Need stmt to import sub-package
 //Need to state full sub-package name to import
-import orders.items.*;
+import mainApp.orders.items.*;
 
 public class Order {
 

@@ -1,3 +1,5 @@
+package mainApp;
+
 public class StringBuilderTest {
 
     public static void toStringTest() {

@@ -1,3 +1,5 @@
+package mainApp;
+
 import java.util.*;
 
 public class ArrayListTest {

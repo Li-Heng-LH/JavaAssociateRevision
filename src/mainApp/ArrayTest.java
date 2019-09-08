@@ -1,3 +1,5 @@
+package mainApp;
+
 public class ArrayTest {
     public static void initialisationTest() {
 

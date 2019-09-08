@@ -1,3 +1,5 @@
+package mainApp;
+
 public class SwitchTest {
 
     //cases are evaluated first,

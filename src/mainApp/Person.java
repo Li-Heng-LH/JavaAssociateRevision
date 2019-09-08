@@ -1,3 +1,5 @@
+package mainApp;
+
 public class Person {
 
     private String name;
@@ -5,7 +7,7 @@ public class Person {
 
     public Person() {
         //Wrong way to chain constructors
-        //Person("abc", 20);
+        //mainApp.Person("abc", 20);
 
         //proper way to chain constructors
         this("abc", 20);

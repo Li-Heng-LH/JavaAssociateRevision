@@ -2,10 +2,10 @@
 //import java.util.*;
 
 //Need to be first stmt
-package orders.items;
+package mainApp.orders.items;
 
 //Need stmt to import parent package
-import orders.Order;
+import mainApp.orders.Order;
 
 public class Item {
 
