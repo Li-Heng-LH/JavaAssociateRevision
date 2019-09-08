@@ -8,5 +8,7 @@ package orders;
 import orders.items.*;
 
 public class Order {
+
+    protected int i1;
     Item item;
 }

@@ -10,4 +10,7 @@ import orders.Order;
 public class Item {
 
     Order order = new Order();
+
+    //protected : class in sub-package cannot access protected in parent package
+    //int i1 = order.i1; //give error
 }
