@@ -7,11 +7,13 @@
 import java.util.*;
 import java.time.LocalDate;
 import mainApp.ChildTwo;
+import mainApp.InitialisationTest;
 import mainApp.StringBuilderTest;
 
 public class MainApp {
 
     public static void main(String[] args) {
-        StringBuilderTest.capacityIncrement();
+        InitialisationTest test = new InitialisationTest();
+        test.initialiseCDF();
     }
 }
