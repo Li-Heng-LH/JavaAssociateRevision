@@ -11,4 +11,8 @@ public class SuperClass {
     private void superPrint() {
         System.out.println("Printing in super private method");
     }
+
+    protected void superProtectedPrint() {
+        System.out.println("Printing in super protected method");
+    }
 }
