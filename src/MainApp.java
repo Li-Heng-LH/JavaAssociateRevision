@@ -7,11 +7,11 @@
 import java.util.*;
 import java.time.LocalDate;
 import mainApp.ChildTwo;
+import mainApp.StringBuilderTest;
 
 public class MainApp {
 
     public static void main(String[] args) {
-        //Runtime Exception: Invalid date
-        //LocalDate date = LocalDate.of(2020, 9, 31);
+        StringBuilderTest.constructWithCapacity();
     }
 }

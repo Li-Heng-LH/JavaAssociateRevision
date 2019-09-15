@@ -31,4 +31,10 @@ public class StringBuilderTest {
         System.out.println(str.equals(sb));
         System.out.println(sb.equals(str));
     }
+
+    public static void constructWithCapacity() {
+        //SB constructor takes in capacity
+        StringBuilder sb = new StringBuilder(100);
+        System.out.println(sb.capacity());
+    }
 }
