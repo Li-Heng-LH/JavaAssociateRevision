@@ -37,4 +37,14 @@ public class StringBuilderTest {
         StringBuilder sb = new StringBuilder(100);
         System.out.println(sb.capacity());
     }
+
+    public static void capacityIncrement() {
+        //SB capacity increases by (oldcapacity*2)+2
+        StringBuilder sb = new StringBuilder(3);
+        System.out.println("capacity: " + sb.capacity()); //3
+        sb.append("abc");
+        System.out.println("capacity: " + sb.capacity()); //3
+        sb.append("a");
+        System.out.println("capacity: " + sb.capacity()); //8
+    }
 }

@@ -12,6 +12,6 @@ import mainApp.StringBuilderTest;
 public class MainApp {
 
     public static void main(String[] args) {
-        StringBuilderTest.constructWithCapacity();
+        StringBuilderTest.capacityIncrement();
     }
 }
