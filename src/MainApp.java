@@ -15,7 +15,7 @@ import mainApp.inheritance.InheritanceTest;
 public class MainApp {
 
     public static void main(String[] args) {
-        InheritanceTest.testAccessingParentPrivate();
+        InheritanceTest.testMultipleChildren();
     }
 
     private static void throwsException() throws Exception {

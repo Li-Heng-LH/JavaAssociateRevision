@@ -2,7 +2,7 @@ package mainApp.inheritance;
 
 public class SuperClass {
 
-    private int superInt;
+    public int superInt = 0;
 
     public SuperClass() {
         System.out.println("Super constructor");
