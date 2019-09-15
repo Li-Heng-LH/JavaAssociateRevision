@@ -12,8 +12,11 @@ import mainApp.StringBuilderTest;
 
 public class MainApp {
 
-    public static void main(String[] args) {
-        InitialisationTest test = new InitialisationTest();
-        test.initialiseCDF();
+    public static void main(String[] args) throws Exception {
+        throwsException();
+    }
+
+    private static void throwsException() throws Exception {
+        System.out.println("All fine");
     }
 }
