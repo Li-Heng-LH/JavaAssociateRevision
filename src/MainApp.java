@@ -10,11 +10,12 @@ import mainApp.ChildTwo;
 import mainApp.InitialisationTest;
 import mainApp.ReferencePassingTest;
 import mainApp.StringBuilderTest;
+import mainApp.inheritance.InheritanceTest;
 
 public class MainApp {
 
     public static void main(String[] args) {
-        ReferencePassingTest.referenceIsCopied();
+        InheritanceTest.testSuperConstruct();
     }
 
     private static void throwsException() throws Exception {
