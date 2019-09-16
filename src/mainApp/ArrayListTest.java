@@ -19,7 +19,7 @@ public class ArrayListTest {
         arrayList.replaceAll(s -> s.equals("l") ? "L" : s);
         System.out.println(arrayList.toString());
     }
-    
+
     public static void storeStringTest() {
         List<String> arrayList = new ArrayList<>();
         String str = "hello";
@@ -32,4 +32,15 @@ public class ArrayListTest {
         System.out.println(arrayList.toString());
     }
 
+    public static void storeReferenceTest() {
+        List<Foo> arrayList = new ArrayList<>();
+        Foo foo = new Foo(1, "a");
+        arrayList.add(foo);
+        arrayList.add(foo);
+        System.out.println(arrayList);
+
+        foo.setId(2);
+        foo.setName("B");
+        System.out.println(arrayList);
+    }
 }
