@@ -6,16 +6,14 @@
 
 import java.util.*;
 import java.time.LocalDate;
-import mainApp.ChildTwo;
-import mainApp.InitialisationTest;
-import mainApp.ReferencePassingTest;
-import mainApp.StringBuilderTest;
+
+import mainApp.*;
 import mainApp.inheritance.InheritanceTest;
 
 public class MainApp {
 
     public static void main(String[] args) {
-        InheritanceTest.testMultipleChildren();
+        ArrayListTest.storeStringTest();
     }
 
     private static void throwsException() throws Exception {
