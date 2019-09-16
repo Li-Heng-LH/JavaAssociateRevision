@@ -9,11 +9,12 @@ import java.time.LocalDate;
 
 import mainApp.*;
 import mainApp.inheritance.InheritanceTest;
+import mainApp.orders.StringTest;
 
 public class MainApp {
 
     public static void main(String[] args) {
-        ArrayListTest.storeReferenceTest();
+        StringTest.replaceTest();
     }
 
     private static void throwsException() throws Exception {
