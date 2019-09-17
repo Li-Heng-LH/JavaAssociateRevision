@@ -14,7 +14,7 @@ import mainApp.orders.StringTest;
 public class MainApp {
 
     public static void main(String[] args) {
-        StringTest.replaceTest();
+        StringTest.assignThenPrintTest();
     }
 
     private static void throwsException() throws Exception {
