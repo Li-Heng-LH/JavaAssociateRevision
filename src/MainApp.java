@@ -14,8 +14,12 @@ import mainApp.orders.StringTest;
 
 public class MainApp {
 
+    static {
+        System.out.println("YAY");
+    }
+
     public static void main(String[] args) {
-        Message.main(args);
+        System.out.println("HELLO");
     }
 
     private static void throwsException() throws Exception {
