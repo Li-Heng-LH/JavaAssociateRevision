@@ -43,4 +43,16 @@ public class ArrayListTest {
         foo.setName("B");
         System.out.println(arrayList);
     }
+
+    public static void cloneTest() {
+        ArrayList<Foo> fooList = new ArrayList<>();
+        fooList.add(new Foo(0, "abc"));
+        ArrayList<Foo> fooList2 = (ArrayList<Foo>) fooList.clone();
+
+        fooList.get(0).setId(999);
+        fooList.get(0).setName("xyz");
+
+        //clone returns a shallow copy. Both lists pointing to same object
+        System.out.println(fooList2.get(0));
+    }
 }
