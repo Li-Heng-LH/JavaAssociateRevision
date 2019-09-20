@@ -19,11 +19,18 @@ public class MainApp {
     }
 
     public static void main(String[] args) {
-        ArrayListTest.cloneTest();
+        int a = 100;
+        System.out.println(-a++);//-100
+        doOperation(a++);//101
+        System.out.println(a);//102
     }
 
     private static void throwsException() throws Exception {
         System.out.println("All fine");
+    }
+
+    private static void doOperation(int a) {
+        System.out.println(a);
     }
 }
 
