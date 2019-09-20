@@ -55,4 +55,19 @@ public class ArrayListTest {
         //clone returns a shallow copy. Both lists pointing to same object
         System.out.println(fooList2.get(0));
     }
+
+    public static void removeNewTest() {
+        List<Foo> arrayList = new ArrayList<>();
+        arrayList.add(new Foo(0, "abc"));
+        arrayList.add(new Foo(99, "xyz"));
+        arrayList.add(new Foo(0, "abc"));
+        arrayList.add(new Foo(99, "xyz"));
+
+
+        arrayList.remove(new Foo(0,"abc"));
+
+        for (Foo foo: arrayList) {
+            System.out.println(foo);
+        }
+    }
 }
