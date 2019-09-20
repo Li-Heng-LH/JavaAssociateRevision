@@ -70,4 +70,19 @@ public class ArrayListTest {
             System.out.println(foo);
         }
     }
+
+    public static void removeNewStringTest() {
+        List<String> arrayList = new ArrayList<>();
+        arrayList.add(new String("abc"));
+        arrayList.add(new String("efg"));
+        arrayList.add(new String("abc"));
+        arrayList.add(new String("efg"));
+
+        arrayList.remove(new String("abc"));
+
+        for (String str : arrayList) {
+            System.out.println(str);
+        }
+
+    }
 }
