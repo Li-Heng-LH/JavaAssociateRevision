@@ -56,6 +56,16 @@ public class ArrayListTest {
         System.out.println(fooList2.get(0));
     }
 
+    public static void cloneIsNotSymbolicLink() {
+        ArrayList<Foo> fooList = new ArrayList<>();
+        fooList.add(new Foo(0, "abc"));
+        ArrayList<Foo> fooList2 = (ArrayList<Foo>) fooList.clone();
+
+        fooList.set(0, new Foo(999, "xyz"));
+
+        System.out.println(fooList2.get(0));
+    }
+
     public static void removeNewTest() {
         List<Foo> arrayList = new ArrayList<>();
         arrayList.add(new Foo(0, "abc"));

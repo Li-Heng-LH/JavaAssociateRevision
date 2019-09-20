@@ -19,7 +19,7 @@ public class MainApp {
     }
 
     public static void main(String[] args) {
-        ArrayListTest.removeNewStringTest();
+        ArrayListTest.cloneIsNotSymbolicLink();
     }
 
     private static void throwsException() throws Exception {
