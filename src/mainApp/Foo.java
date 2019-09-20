@@ -33,4 +33,19 @@ public class Foo {
                 ", name='" + name + '\'' +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        } else if (obj == null) {
+            return false;
+        } else if(obj instanceof Foo) {
+            Foo fooObj = (Foo) obj;
+            return this.getId() == fooObj.getId() &&
+                    this.getName().equals(fooObj.getName());
+        } else {
+            return false;
+        }
+    }
 }
