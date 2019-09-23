@@ -1,4 +1,4 @@
-package mainApp.orders;
+package mainApp;
 
 import java.sql.SQLOutput;
 
@@ -17,5 +17,18 @@ public class StringTest {
         String str2 = new String("CoRe");
         System.out.println(str1 = str2);
         System.out.println(str1);
+    }
+
+    public static void printTest() {
+        System.out.println(new String("hello")); //hello
+        System.out.println(new StringBuilder("hello")); //hello
+        System.out.println(new SpecialString("hello")); //Class@address
+    }
+}
+
+class SpecialString {
+    String str;
+    SpecialString(String str) {
+        this.str = str;
     }
 }
