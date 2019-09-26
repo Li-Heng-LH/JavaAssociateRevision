@@ -4,6 +4,7 @@
 //Need a separate import for each subpackage
 //import mainApp.orders.items.*;
 
+import mainApp.StaticTest;
 import mainApp.StringTest;
 
 public class MainApp {
@@ -13,7 +14,8 @@ public class MainApp {
     }
 
     public static void main(String[] args) {
-        StringTest.printTest();
+        StaticTest.abc = 999;
+        System.out.println(StaticTest.abc);
     }
 
     private static void throwsException() throws Exception {
