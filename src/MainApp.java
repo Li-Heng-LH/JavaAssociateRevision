@@ -14,8 +14,8 @@ public class MainApp {
     }
 
     public static void main(String[] args) {
-        StaticTest.abc = 999;
-        System.out.println(StaticTest.abc);
+        StaticTest.setAbc(999);
+        System.out.println(StaticTest.getAbc());
     }
 
     private static void throwsException() throws Exception {
