@@ -24,6 +24,16 @@ public class StringTest {
         System.out.println(new StringBuilder("hello")); //hello
         System.out.println(new SpecialString("hello")); //Class@address
     }
+
+    public static void testStringPoolWithEmptyString() {
+        String str1 = "ABCD";
+        String str2 = "ABCD";
+        System.out.println(str1 == str2); //true
+
+        String str3 = "ABCD" + "";
+        System.out.println(str1 == str3); //true
+        System.out.println(str2 == str3); //true
+    }
 }
 
 class SpecialString {

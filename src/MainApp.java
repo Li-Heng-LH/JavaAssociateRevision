@@ -14,8 +14,7 @@ public class MainApp {
     }
 
     public static void main(String[] args) {
-        StaticTest.setAbc(999);
-        System.out.println(StaticTest.getAbc());
+        StringTest.testStringPoolWithEmptyString();
     }
 
     private static void throwsException() throws Exception {
