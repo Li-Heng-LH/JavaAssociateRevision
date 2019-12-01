@@ -4,6 +4,7 @@
 //Need a separate import for each subpackage
 //import mainApp.orders.items.*;
 
+import mainApp.IteratorTest;
 import mainApp.StaticTest;
 import mainApp.StringTest;
 
@@ -14,7 +15,7 @@ public class MainApp {
     }
 
     public static void main(String[] args) {
-        StringTest.testStringPoolWithEmptyString();
+        IteratorTest.testTraversal();
     }
 
     private static void throwsException() throws Exception {
