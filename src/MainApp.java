@@ -7,6 +7,7 @@
 import mainApp.IteratorTest;
 import mainApp.StaticTest;
 import mainApp.StringTest;
+import mainApp.TestTryCatch;
 
 public class MainApp {
 
@@ -14,8 +15,8 @@ public class MainApp {
         System.out.println("YAY");
     }
 
-    public static void main(String[] args) {
-        IteratorTest.testTraversal();
+    public static void main(String[] args) throws Exception {
+        TestTryCatch.testFinally();
     }
 
     private static void throwsException() throws Exception {
