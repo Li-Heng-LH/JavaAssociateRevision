@@ -3,6 +3,7 @@ package mainApp;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.ListIterator;
 
 public class IteratorTest {
 
@@ -42,5 +43,45 @@ public class IteratorTest {
 
         System.out.println();
         System.out.println("Iterator 2 after break: " + iterator2.next());
+    }
+
+    public static void testRemoveWhileTraverse(){
+        list.add("A");
+        list.add("B");
+        list.add("C");
+        list.add("D");
+        list.add("E");
+
+        ListIterator<String> listIterator = list.listIterator();
+
+        while (listIterator.hasNext()) {
+            if (listIterator.next().equals("C")) {
+                listIterator.remove();
+            }
+        }
+
+        //should remove C
+        System.out.println(list);
+    }
+
+    public static void testAddWhileTraverse() {
+        list.add("A");
+        list.add("B");
+        list.add("C");
+        list.add("D");
+        list.add("E");
+
+        ListIterator<String> listIterator = list.listIterator();
+
+        while (listIterator.hasNext()) {
+            if (listIterator.next().equals("C")) {
+                listIterator.previous();
+                listIterator.add("Z");
+                listIterator.next();
+            }
+        }
+
+        //should add Z in front of C
+        System.out.println(list);
     }
 }
