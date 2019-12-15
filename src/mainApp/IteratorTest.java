@@ -55,8 +55,11 @@ public class IteratorTest {
         ListIterator<String> listIterator = list.listIterator();
 
         while (listIterator.hasNext()) {
-            if (listIterator.next().equals("C")) {
-                listIterator.remove();
+
+            String next = listIterator.next();
+
+            if (next.equals("C")) {
+                listIterator.remove(); //remove() removes the last element returned by iterator
             }
         }
 

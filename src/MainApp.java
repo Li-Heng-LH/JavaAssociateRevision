@@ -16,7 +16,7 @@ public class MainApp {
     }
 
     public static void main(String[] args) throws Exception {
-        IteratorTest.testAddWhileTraverse();
+        IteratorTest.testRemoveWhileTraverse();
     }
 
     private static void throwsException() throws Exception {
