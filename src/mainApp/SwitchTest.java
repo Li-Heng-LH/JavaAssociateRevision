@@ -87,4 +87,17 @@ public class SwitchTest {
         }
         //Expected : Default
     }
+
+    public static void testSwitchOnWrapperClass() {
+        Integer var = 7;
+
+        switch (var) {
+            case 7:
+                System.out.println("Lucky 7");
+                break;
+                default:
+                    System.out.println("Not 7");
+        }
+    }
+
 }

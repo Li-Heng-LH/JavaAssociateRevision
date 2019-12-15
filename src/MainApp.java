@@ -13,7 +13,7 @@ public class MainApp {
     }
 
     public static void main(String[] args) throws Exception {
-        ReferencePassingTest.referenceIsCopied();
+        SwitchTest.testSwitchOnWrapperClass();
     }
 
     private static void throwsException() throws Exception {
