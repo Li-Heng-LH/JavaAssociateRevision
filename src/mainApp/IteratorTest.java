@@ -87,4 +87,24 @@ public class IteratorTest {
         //should add Z in front of C
         System.out.println(list);
     }
+
+    public static void testRemoveUsingListRemove() {
+        list.add("A");
+        list.add("B");
+        list.add("C");
+        list.add("D");
+        list.add("E");
+
+        Iterator<String> iterator = list.iterator();
+
+        while (iterator.hasNext()) {
+            String next = iterator.next();
+            if (next.equals("C")) {
+                list.remove(next); //Note: we are using list remove here, and not iterator remove
+            }
+        }
+
+        //expected to throw exception: java.util.ConcurrentModificationException
+        System.out.println(list);
+    }
 }

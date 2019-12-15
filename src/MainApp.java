@@ -16,7 +16,7 @@ public class MainApp {
     }
 
     public static void main(String[] args) throws Exception {
-        IteratorTest.testRemoveWhileTraverse();
+        IteratorTest.testRemoveUsingListRemove();
     }
 
     private static void throwsException() throws Exception {
