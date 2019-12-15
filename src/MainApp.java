@@ -4,10 +4,7 @@
 //Need a separate import for each subpackage
 //import mainApp.orders.items.*;
 
-import mainApp.IteratorTest;
-import mainApp.StaticTest;
-import mainApp.StringTest;
-import mainApp.TestTryCatch;
+import mainApp.*;
 
 public class MainApp {
 
@@ -16,7 +13,7 @@ public class MainApp {
     }
 
     public static void main(String[] args) throws Exception {
-        IteratorTest.testRemoveUsingListRemove();
+        ReferencePassingTest.referenceIsCopied();
     }
 
     private static void throwsException() throws Exception {

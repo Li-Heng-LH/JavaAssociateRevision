@@ -3,23 +3,26 @@ package mainApp;
 public class ReferencePassingTest {
 
     public static void referenceIsCopied() {
-        Message obj = new Message();
-        obj.print();
-        changeMsg(obj);
-        obj.print();
+        Message obj = new Message("Hello World");
+        obj.print(); //"Hello World"
+        changeMsg(obj); //reference is COPIED into method
+        obj.print(); //Still the same reference as before, therefore, "Hello World"
     }
 
     private static void changeMsg(Message msg) {
-        //reference is copied in msg
-        msg = new Message();
-        //now msg reference is set to point to another object
-        msg.message = "Bye bye!";
+        //reference obj is copied into msg
+        //msg is another reference, not the same as obj
+        msg = new Message("Bye bye");
+        System.out.println(msg.message); //"Bye bye"
     }
 }
 
 
 class Message {
-    String message = "Hello World";
+    String message;
+    public Message (String message) {
+        this.message = message;
+    }
     public void print() {
         System.out.println(message);
     }
