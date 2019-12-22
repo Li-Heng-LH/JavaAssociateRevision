@@ -93,6 +93,18 @@ public class ArrayListTest {
         for (String str : arrayList) {
             System.out.println(str);
         }
+    }
 
+    public static void testRemove() {
+        List<Integer> arrayList = new ArrayList<>();
+        arrayList.add(2);
+        arrayList.add(1);
+        arrayList.add(0);
+
+        //compiler applies autoboxing here
+        //because int is passed as parameter to a method that expects Integer.
+        System.out.println("Index of 0: " + arrayList.indexOf(0));
+        arrayList.remove(arrayList.indexOf(0));
+        System.out.println(arrayList);
     }
 }

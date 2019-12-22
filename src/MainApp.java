@@ -13,7 +13,7 @@ public class MainApp {
     }
 
     public static void main(String[] args) throws Exception {
-        SwitchTest.testSwitchOnWrapperClass();
+        ArrayListTest.testRemove();
     }
 
     private static void throwsException() throws Exception {
