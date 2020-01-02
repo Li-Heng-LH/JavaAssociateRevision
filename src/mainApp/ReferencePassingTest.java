@@ -25,6 +25,19 @@ public class ReferencePassingTest {
         //therefore, reassign does not affect obj
         msg = new Message("Bye bye");
     }
+
+    public static void javaIsPassByValue() {
+        Point point = new Point();
+        point.x = 10;
+        point.y = 20;
+        System.out.println(point);
+        changePointFail(point.x);
+        System.out.println(point);
+    }
+
+    private static void changePointFail(int x) {
+        x = 999;
+    }
 }
 
 
@@ -36,5 +49,14 @@ class Message {
     public void print() {
         System.out.println(message);
     }
+}
 
+class Point {
+    int x;
+    int y;
+
+    @Override
+    public String toString() {
+        return "[" + x + ", " + y + "]";
+    }
 }
