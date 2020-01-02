@@ -14,7 +14,7 @@ public class MainApp {
     }
 
     public static void main(String[] args) throws Exception {
-        ReferencePassingTest.javaIsPassByValue();
+        ArrayListTest.testRemoveIdxOrObj();
     }
 
     private static void throwsException() throws Exception {

@@ -107,4 +107,19 @@ public class ArrayListTest {
         arrayList.remove(arrayList.indexOf(0));
         System.out.println(arrayList);
     }
+
+    public static void testRemoveIdxOrObj() {
+        List<Integer> list = new ArrayList<>();
+        list.add(200);
+        list.add(100);
+        list.add(0);
+        System.out.println(list);
+
+        //remove at INDEX!
+        //Autoboxing will not apply here as method matching is done first!
+        //list.remove(100);
+
+        list.remove(Integer.valueOf(100));
+        System.out.println(list);
+    }
 }
