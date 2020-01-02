@@ -28,4 +28,9 @@ public class InheritanceTest {
         System.out.println(sc1.superInt);
         System.out.println(sc2.superInt);
     }
+
+    public static void testCasting() {
+        SuperClass superClass = new SuperClass();
+        SubClass subClass = (SubClass) superClass; //ClassCastException : RuntimeException
+    }
 }

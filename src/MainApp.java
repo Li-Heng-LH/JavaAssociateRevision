@@ -5,6 +5,7 @@
 //import mainApp.orders.items.*;
 
 import mainApp.*;
+import mainApp.inheritance.InheritanceTest;
 
 public class MainApp {
 
@@ -13,7 +14,7 @@ public class MainApp {
     }
 
     public static void main(String[] args) throws Exception {
-        ArrayListTest.testRemove();
+        InheritanceTest.testCasting();
     }
 
     private static void throwsException() throws Exception {

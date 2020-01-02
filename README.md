@@ -4,7 +4,7 @@
 
 #### Iterator ####
 * Using `iterator.remove()` : removes the last element returned by iterator
-* Suing `ArrayList.remove()` : `java.util.ConcurrentModificationException`
+* Using `ArrayList.remove()` : `java.util.ConcurrentModificationException`
 
 &nbsp;
 
@@ -32,6 +32,11 @@ Then, compiler will think that this is a overriden method, ans starts to check f
 * same return types
 * access level rules
 * exceptions rules
+&nbsp;
+
+#### Type casting with inheritance ####
+* ClassCastException is a RuntimeException
+* Casting an animal instance to a dog instance --> ClassCastException
 &nbsp;
 
 
