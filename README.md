@@ -18,3 +18,20 @@
 Compiler applies autoboxing when a primitive value is: 
 * passed as parameter to a method that expects the wrapper class (li.add(i) --> li.add(Integer.valueOf(i)))
 * assigned to a variable of wrapper class
+
+&nbsp;
+
+#### Overriding ####
+When does compiler decides that a method is a overriden method? 
+When compiler sees a method in child class: 
+* has the same name as the method in parent class, and 
+* has the same parameter types as the method in parent class
+&nbsp;
+
+Then, compiler will think that this is a overriden method, ans starts to check for overriding eligibility: 
+* same return types
+* access level rules
+* exceptions rules
+&nbsp;
+
+
