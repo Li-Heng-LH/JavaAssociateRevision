@@ -14,7 +14,7 @@ public class MainApp {
     }
 
     public static void main(String[] args) throws Exception {
-        ArrayListTest.testRemoveIdxOrObj();
+        ArrayListTest.testRemoveIdxOrObj2();
     }
 
     private static void throwsException() throws Exception {

@@ -122,4 +122,18 @@ public class ArrayListTest {
         list.remove(Integer.valueOf(100));
         System.out.println(list);
     }
+
+    public static void testRemoveIdxOrObj2() {
+        List<Double> list = new ArrayList<>();
+        list.add(200.0);
+        list.add(100.0);
+        list.add(0.0);
+        System.out.println(list);
+
+        //remove obj!
+        //Autoboxing will apply here as method matching fails!
+        list.remove(100.0);
+
+        System.out.println(list);
+    }
 }
