@@ -14,7 +14,7 @@ public class MainApp {
     }
 
     public static void main(String[] args) throws Exception {
-        ArrayListTest.testRemoveIdxOrObj2();
+        SuperTest.printDog();
     }
 
     private static void throwsException() throws Exception {
