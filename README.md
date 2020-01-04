@@ -39,4 +39,10 @@ Then, compiler will think that this is a overriden method, ans starts to check f
 * Casting an animal instance to a dog instance --> ClassCastException
 &nbsp;
 
+#### super() ####
+* If a constructor does not explicitly invoke a superclass constructor, the Java compiler automatically inserts a call to the no-argument constructor of the superclass. 
+* If the super class does not have a no-argument constructor, you will get a compile-time error. 
+* Object does have such a constructor, so if Object is the only superclass, there is no problem.
+
+&nbsp;
 
