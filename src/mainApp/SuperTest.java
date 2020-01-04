@@ -1,3 +1,5 @@
+package mainApp;
+
 public class SuperTest {
 
     public static void printDog() {
@@ -7,14 +9,14 @@ public class SuperTest {
 }
 
 
-abstract class Animal {
+abstract class Animal3 {
     private String name;
 
     //IMPORTANT
-    //If there is no no-arg constructor, compilation error in Dog Class
-    Animal() {}
+    //If there is no no-arg constructor, compilation error in mainApp.Dog Class
+    Animal3() {}
 
-    Animal(String name) {
+    Animal3(String name) {
         this.name = name;
     }
 
@@ -24,15 +26,15 @@ abstract class Animal {
 
 }
 
-class Dog extends Animal {
+class Dog3 extends Animal3 {
     private String breed;
 
-    Dog(String breed) {
+    Dog3(String breed) {
         // implicit super() here
         this.breed = breed;
     }
 
-    Dog(String name, String breed) {
+    Dog3(String name, String breed) {
         super(name);
         this.breed = breed;
     }

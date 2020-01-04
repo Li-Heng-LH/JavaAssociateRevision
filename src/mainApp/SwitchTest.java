@@ -100,4 +100,19 @@ public class SwitchTest {
         }
     }
 
+    public static void testSwitchOnByte() {
+        byte var = 100;
+
+        switch (var) {
+            case 100:
+                System.out.println("100");
+                break;
+            //case 128: //128 will compile error as 128 is outside byte range (-128 to 127)
+                //System.out.println("128");
+                //break;
+            default:
+                System.out.println("Default");
+        }
+    }
+
 }

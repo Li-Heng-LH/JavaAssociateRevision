@@ -8,7 +8,7 @@ class Animal {
 
 }
 
-class Dog extends Animal {
+class Dog extends Animal3 {
 
     //Not throwing exception is allowed
     //public void method() {} //Not throwing exception is allowed

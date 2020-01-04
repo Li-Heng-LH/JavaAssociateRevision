@@ -5,7 +5,6 @@
 //import mainApp.orders.items.*;
 
 import mainApp.*;
-import mainApp.inheritance.InheritanceTest;
 
 public class MainApp {
 
