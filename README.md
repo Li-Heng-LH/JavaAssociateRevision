@@ -44,5 +44,8 @@ Then, compiler will think that this is a overriden method, ans starts to check f
 * If the super class does not have a no-argument constructor, you will get a compile-time error. 
 * Object does have such a constructor, so if Object is the only superclass, there is no problem.
 
+#### How many objects are created when a Child object is created then? ####
+* [One](https://stackoverflow.com/questions/16498211/does-creating-an-instance-of-a-child-class-automatically-create-its-super-class)
+
 &nbsp;
 

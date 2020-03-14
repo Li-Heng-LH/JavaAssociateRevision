@@ -13,7 +13,7 @@ public class MainApp {
     }
 
     public static void main(String[] args) throws Exception {
-        SuperTest.printDog();
+        OnlyOneObjectCreatedTest.run();
     }
 
     private static void throwsException() throws Exception {
