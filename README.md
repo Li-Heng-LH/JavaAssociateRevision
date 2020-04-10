@@ -22,7 +22,7 @@ Compiler applies autoboxing when a primitive value is:
 &nbsp;
 
 #### Overriding ####
-When does compiler decides that a method is a overriden method? 
+When does compiler decides that a method is a overridden method? 
 When compiler sees a method in child class: 
 * has the same name as the method in parent class, and 
 * has the same parameter types as the method in parent class
@@ -43,6 +43,23 @@ Then, compiler will think that this is a overriden method, ans starts to check f
 * If a constructor does not explicitly invoke a superclass constructor, the Java compiler automatically inserts a call to the no-argument constructor of the superclass. 
 * If the super class does not have a no-argument constructor, you will get a compile-time error. 
 * Object does have such a constructor, so if Object is the only superclass, there is no problem.
+&nbsp;
+
+### static ###
+* static methods cannot be abstract. See below. 
+* Question: can static methods be overridden? 
+* Question: can static methods be private? 
+&nbsp;
+
+### private ###
+* private methods cannot be overridden, since it is not visible to other classes. 
+&nbsp;
+
+### abstract ###
+* **abstract methods cannot be private**, since private methods cannot be overridden. 
+* **abstract methods cannot be static**. Imagine `AbstractClass.abstractMethod()` is called, what will happen? 
+* can have empty implementations for void abstract methods. 
+&nbsp;
 
 #### How many objects are created when a Child object is created then? ####
 * [One](https://stackoverflow.com/questions/16498211/does-creating-an-instance-of-a-child-class-automatically-create-its-super-class)
