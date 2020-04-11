@@ -50,7 +50,7 @@ Then, compiler will think that this is a overriden method, ans starts to check f
 * Object does have such a constructor, so if Object is the only superclass, there is no problem.
 &nbsp;
 
-### static ###
+#### static ####
 * static methods cannot be abstract. See below. 
 * Question: can static methods be private? Yes. 
 * Question: can static methods be overridden? Not exactly overridden. But it has no errors. [Reference](http://geekexplains.blogspot.com/2008/06/can-you-override-static-methods-in-java.html)   
@@ -58,14 +58,23 @@ Static methods are class methods.
 Which static methods to use is resolved during compile time, using only the compile time type information. 
 &nbsp;
 
-### private ###
+#### private ####
 * private methods cannot be overridden, since it is not visible to other classes. 
 &nbsp;
 
-### abstract ###
+#### abstract ####
 * **abstract methods cannot be private**, since private methods cannot be overridden. 
 * **abstract methods cannot be static**. Imagine `AbstractClass.abstractMethod()` is called, what will happen? 
 * can have empty implementations for void abstract methods. 
+&nbsp;
+
+#### try throws catch finally ####
+* **Whenever** an exception is thrown or there is a call that throws exception, it **must** be _**handled**_. 
+* There are 2 ways to **handle** `Exception`: 
+  * 1: **catch**  (catch and do nothing is fine)
+  * 2: method **throws**  (just throws will do)
+* **try must be followed by either catch or finally**.  
+
 &nbsp;
 
 #### How many objects are created when a Child object is created then? ####
