@@ -3,7 +3,7 @@ package mainApp;
 public abstract class AbstractClass {
 
     //Illegal:
-    //public static abstract void a();
+    //public static abstract void a();w
 
     public void publicConcreteMethod(){}
     public abstract void publicAbstractMethod();
