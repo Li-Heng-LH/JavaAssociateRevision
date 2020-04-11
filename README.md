@@ -2,6 +2,11 @@
 
 &nbsp;
 
+#### compile-time & runtime type ####
+* The "compile-time type" of a variable is the type it is declared as. 
+* The "runtime type" is the type of the actual object the variable points to. 
+&nbsp;
+
 #### Iterator ####
 * Using `iterator.remove()` : removes the last element returned by iterator
 * Using `ArrayList.remove()` : `java.util.ConcurrentModificationException`
@@ -47,8 +52,10 @@ Then, compiler will think that this is a overriden method, ans starts to check f
 
 ### static ###
 * static methods cannot be abstract. See below. 
-* Question: can static methods be overridden? 
-* Question: can static methods be private? 
+* Question: can static methods be private? Yes. 
+* Question: can static methods be overridden? Not exactly overridden. But it has no errors. [Reference](http://geekexplains.blogspot.com/2008/06/can-you-override-static-methods-in-java.html)   
+Static methods are class methods.   
+Which static methods to use is resolved during compile time, using only the compile time type information. 
 &nbsp;
 
 ### private ###
