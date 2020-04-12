@@ -74,6 +74,7 @@ Which static methods to use is resolved during compile time, using only the comp
   * 1: **catch**  (catch and do nothing is fine)
   * 2: method **throws**  (just throws will do)
 * **try must be followed by either catch or finally**.  
+* **Use try...finally block** for important things that have to be done no matter what, example: close input stream. 
 
 &nbsp;
 

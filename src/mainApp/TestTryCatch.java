@@ -31,7 +31,9 @@ public class TestTryCatch {
         }
     }
 
-    private void aMethodThatThrowsException() throws Exception {}
+    private static void aMethodThatThrowsException() throws Exception {
+        throw new Exception();
+    }
 
     private void justLikeANormalOne() {
         try {
@@ -56,6 +58,19 @@ public class TestTryCatch {
             aMethodThatThrowsException();
         } finally {
 
+        }
+    }
+
+    public static void withNoTryFinally() throws Exception {
+        aMethodThatThrowsException();
+        System.out.println("This should not be printed");
+    }
+
+    public static void withTryFinally() throws Exception {
+        try {
+            aMethodThatThrowsException();
+        } finally {
+            System.out.println("Important thing that has to be done");
         }
     }
 }
