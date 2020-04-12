@@ -50,6 +50,11 @@ Then, compiler will think that this is a overriden method, ans starts to check f
 * Object does have such a constructor, so if Object is the only superclass, there is no problem.
 &nbsp;
 
+#### constructor ####
+* Constructors are not inherited. 
+* Constructors need to be of the same name as the class name!
+&nbsp;
+
 #### static ####
 * static methods cannot be abstract. See below. 
 * Question: can static methods be private? Yes. 
