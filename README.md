@@ -1,6 +1,9 @@
-### Some Learning Notes ###
+# JavaAssociateRevision
+Work out examples while revising Java Associate Cert. 
 
 &nbsp;
+
+### Some Learning Notes ###
 
 #### compile-time & runtime type ####
 * The "compile-time type" of a variable is the type it is declared as. 
