@@ -61,6 +61,7 @@ Then, compiler will think that this is a overriden method, ans starts to check f
 #### static ####
 * static methods cannot be abstract. See below. 
 * Question: can static methods be private? Yes. 
+* Question: can property be private static? Yes. It can be used for [singleton](https://www.baeldung.com/java-singleton). 
 * Question: can static methods be overridden? Not exactly overridden. But it has no errors. [Reference](http://geekexplains.blogspot.com/2008/06/can-you-override-static-methods-in-java.html)   
 Static methods are class methods.   
 Which static methods to use is resolved during compile time, using only the compile time type information. 
