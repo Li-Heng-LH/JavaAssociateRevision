@@ -22,6 +22,12 @@ Work out examples while revising Java Associate Cert.
 
 &nbsp;
 
+#### Java reference ####
+* A variable of an object actually stores the "**address**" of the object. 
+* object1 = object2 --> address is copied. Therefore, both pointing to the same object. 
+* If object1 is changed to point to another object, object2 will s=be still pointing to the old object. 
+&nbsp;
+
 #### Java Autoboxing ####
 Compiler applies autoboxing when a primitive value is: 
 * passed as parameter to a method that expects the wrapper class (li.add(i) --> li.add(Integer.valueOf(i)))

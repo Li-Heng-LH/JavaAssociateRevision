@@ -13,7 +13,7 @@ public class MainApp {
     }
 
     public static void main(String[] args) throws Exception {
-        TestTryCatch.withTryFinally();
+        TestObjectReference.test();
     }
 
     private static void throwsException() throws Exception {
