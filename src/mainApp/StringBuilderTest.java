@@ -1,6 +1,11 @@
 package mainApp;
 
+import java.time.Duration;
+import java.time.Instant;
+
 public class StringBuilderTest {
+
+    private static final int NUMBER_OF_TIMES = 100000;
 
     public static void toStringTest() {
         StringBuilder sb = new StringBuilder("abc");
@@ -46,5 +51,25 @@ public class StringBuilderTest {
         System.out.println("capacity: " + sb.capacity()); //3
         sb.append("a");
         System.out.println("capacity: " + sb.capacity()); //8
+    }
+
+    public static void builderVSConcat() {
+        StringBuilder sb = new StringBuilder("HAHA");
+        Instant start = Instant.now();
+        for (int i = 0; i < NUMBER_OF_TIMES; i++) {
+            sb.append("HAHA");
+        }
+        Instant finish = Instant.now();
+        System.out.println("StringBuilder Time: " + Duration.between(start, finish).toMillis() +  " milliseconds.");
+        System.out.println("length of sb: " + sb.length());
+
+        String str = "HAHA";
+        start = Instant.now();
+        for (int i = 0; i < NUMBER_OF_TIMES; i++) {
+            str += "HAHA";
+        }
+        finish = Instant.now();
+        System.out.println("String Concat Time: " + Duration.between(start, finish).toMillis() +  " milliseconds.");
+        System.out.println("length of string: " + str.length());
     }
 }
